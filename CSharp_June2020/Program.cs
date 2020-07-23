@@ -7,6 +7,7 @@ namespace CSharp_June2020
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!!");
         }
     }
 }
