@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace CSharp
+namespace Ch2_TyprsInCSharp
 {
-    class Program
+    class Ch2_Main
     {
         static void Main(string[] args)
         {
