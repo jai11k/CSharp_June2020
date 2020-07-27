@@ -38,6 +38,8 @@ namespace Ch1_FundamentalsOfCSharp
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello World!!");
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!!");
         }
     }
   
