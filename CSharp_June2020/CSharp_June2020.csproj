@@ -14,5 +14,8 @@
     <Folder Include="70-483\Ch3_OOP\Polymorphism\StaticPolymorphisimAlso_EarlyBinding\" />
     <Folder Include="70-483\Ch3_OOP\Polymorphism\DynamicPolymorphismAlso_LateBinding\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Generics\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections\" />
   </ItemGroup>
 </Project>
