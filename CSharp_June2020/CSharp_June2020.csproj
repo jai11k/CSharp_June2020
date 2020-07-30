@@ -3,7 +3,19 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Ch2_TyprsInCSharp.TestEnum</StartupObject>
+    <StartupObject>Ch4_AdvanceCSharp.GenericsInCSharp</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="70-483\Ch3_OOP\" />
+    <Folder Include="70-483\Ch3_OOP\DataProtection\" />
+    <Folder Include="70-483\Ch3_OOP\Inheritance\" />
+    <Folder Include="70-483\Ch3_OOP\Polymorphism\" />
+    <Folder Include="70-483\Ch3_OOP\Polymorphism\StaticPolymorphisimAlso_EarlyBinding\" />
+    <Folder Include="70-483\Ch3_OOP\Polymorphism\DynamicPolymorphismAlso_LateBinding\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Generics\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections\" />
+  </ItemGroup>
 </Project>
