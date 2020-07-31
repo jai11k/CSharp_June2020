@@ -17,5 +17,8 @@
     <Folder Include="70-483\Ch4_AdvanceCSharp\Generics\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections.Generics\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections.Concurrent\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\" />
   </ItemGroup>
 </Project>

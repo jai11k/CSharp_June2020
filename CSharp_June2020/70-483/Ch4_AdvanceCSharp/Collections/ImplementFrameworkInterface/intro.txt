@@ -1,0 +1,13 @@
+﻿You can take advantage of .NET framework on custom types by implementing the following
+interfaces.
+C# provides built-in interfaces that are useful to manage custom types for different useful
+purposes like
+defining custom collections and dispose resources that are no longer needed.
+
+• IEnumerable & IEnemerable<T>
+• IEnumerator & IEnumerator<T>
+• ICollection & ICollection<T>
+• IList & IList<T>
+• IComparable & IComparable<T>
+• IComparer & IComparer<T>
+• IEquatable<T>
