@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Ch4_AdvanceCSharp.test
+namespace Ch4_AdvanceCSharp
 {
     #region jaankari
     /*
@@ -15,13 +15,13 @@ namespace Ch4_AdvanceCSharp.test
         static void Main(string[] args)
         {
             People people = new People(3);
-            people.Add(new Person { Name = "Ali", Age = 22 });
-            people.Add(new Person { Name = "Sundus", Age = 21 });
-            people.Add(new Person { Name = "Hogi", Age = 12 });
+            people.Add(new Person2 { Name = "Ali", Age = 22 });
+            people.Add(new Person2 { Name = "Sundus", Age = 21 });
+            people.Add(new Person2 { Name = "Hogi", Age = 12 });
             foreach (var item in people)
             {
-                //Cast from object to Person
-                Person person = (Person)item;
+                //Cast from object to Person...kyuki interface di implemenatation ch object type hai
+                Person2 person = (Person2)item;
                 Console.WriteLine("Name:{0} Age:{1}", person.Name, person.Age);
                 //Console.WriteLine("{0}---", item);
             }
@@ -30,9 +30,9 @@ namespace Ch4_AdvanceCSharp.test
 
     class People : IEnumerable
     {
-        Person[] people;
+        Person2[] people;
         int index = -1;
-        public void Add(Person per)
+        public void Add(Person2 per)
         {
             if (++index < people.Length)
             {
@@ -41,32 +41,30 @@ namespace Ch4_AdvanceCSharp.test
         }
         public People(int size)
         {
-            people = new Person[size];
+            people = new Person2[size];
         }
         public IEnumerator GetEnumerator()
         {
-            //as IEnumerator is parent class of PersonEnum
-            return new PersonEnum(people);
 
-            //int[] a = new int[4];
-            //a[0] = 2;
-            //a[1] = 1;
-            //a[2] = 2;
-            //a[3] = 3;
-            //foreach (var item in a)
-            //{
-            //   yield return item;
-            //}
+            //as IEnumerator is parent class of PersonEnum
+            //IEnumerator test = new PersonEnumerator(people); //kuch aisa,polymorphisism
+            //test.Current;
+            //test.MoveNext
+         //    then this is internally used by IEnumerable :) in foreach loop
+
+            return new PersonEnumerator(people);
+
+           
         }
     }
     //Implement IEnumerator
-    class PersonEnum : IEnumerator
+    class PersonEnumerator : IEnumerator
     {
-        Person[] _people;
+        Person2[] _people;
         int index = -1;
-        public PersonEnum(Person[] people)
+        public PersonEnumerator(Person2[] people)
         {
-         //   _people = people;
+            _people = people;
         }
         //Check whether foreach can move to next iteration or not
         public bool MoveNext()
@@ -88,7 +86,7 @@ namespace Ch4_AdvanceCSharp.test
         }
     }
 
-    class Person
+    class Person2
     {
         public string Name { get; set; }
         public int Age { get; set; }
