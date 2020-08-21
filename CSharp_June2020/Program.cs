@@ -18,9 +18,9 @@ namespace CSharp
         void method1();
     }
 
-    class Test : ITest,IEnumerator
+    class Test : ITest, IEnumerator
     {
-        public object thisIsprop => "";
+        public object thisIsprop => throw new NotImplementedException();
 
         public object Current => throw new NotImplementedException();
 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Ch4_AdvanceCSharp.GenericsInCSharp</StartupObject>
+    <StartupObject>Ch4_AdvanceCSharp.jaankari.YieldKeyword</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,5 +20,6 @@
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections.Generics\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections.Concurrent\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\jaankari\" />
   </ItemGroup>
 </Project>

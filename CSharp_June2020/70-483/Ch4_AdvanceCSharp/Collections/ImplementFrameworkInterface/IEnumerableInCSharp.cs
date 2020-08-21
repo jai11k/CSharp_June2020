@@ -17,11 +17,7 @@ namespace Ch4_AdvanceCSharp
 
     #endregion
 
-    public interface IEnumerable
-    {
-
-        IEnumerator GetEnumerator();
-    }
+  
 
     class myArrayList : IEnumerable
     {
@@ -54,7 +50,7 @@ namespace Ch4_AdvanceCSharp
             list.Add("Sundus");
             list.Add(21);
 
-            var v=list.GetEnumerator();
+   //         var v=list.GetEnumerator();
 
             foreach (var item in list)
             {
