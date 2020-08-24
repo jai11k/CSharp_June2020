@@ -21,5 +21,6 @@
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\System.Collections.Concurrent\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\jaankari\" />
+    <Folder Include="70-483\Ch4_AdvanceCSharp\WorkingWithString\" />
   </ItemGroup>
 </Project>
