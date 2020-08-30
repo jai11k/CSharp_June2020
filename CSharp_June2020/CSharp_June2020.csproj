@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Ch4_AdvanceCSharp.jaankari.YieldKeyword</StartupObject>
+    <StartupObject>CSharp_June2020.Test</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
