@@ -1,0 +1,22 @@
+﻿Table 4-2.
+
+
+System.Collections is a namespace which contains classes and interfaces that manages
+a group of data. It stores each data in the form of a system.object type. Therefore,
+a group of value type data always gets boxed/unboxed. It defines multiple data structures
+to store and retrieve data such as list, queue, and hashtable.
+
+Class          Explanation
+ArrayList      Array of objects whose size can grow and shrink dynamically 
+Hashtable      Collection of key/value pair, organize on base of hash code 
+Queue          Manages group of data in First In, First Out (FIFO) order 
+Stack          Manages group of data in Last In, First Out (LIFO) order
+
+ArrayList
+It’s an array of objects which can grow and shrink its size dynamically. Unlike arrays,
+an ArrayList can hold data of multiple data types. It can be accessed by its index.
+Inserting and deleting an element at the middle of an ArrayList is more costly than inserting
+or deleting an element at the end an ArrayList.
+
+An ArrayList contains many methods and properties that help to manage a group of objects. The following is a list of some frequently used properties and methods defined in an ArrayList.
+Frequently used classes in system.collections namespace

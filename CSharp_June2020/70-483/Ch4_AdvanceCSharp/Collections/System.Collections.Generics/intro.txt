@@ -1,0 +1,10 @@
+﻿System.Collections.Generics is a namespace which contains classes and interfaces to manage
+a strongly-typed collection. In a generic collection, data cannot be boxed/unboxed because
+data always gets type-safed. It is faster and better than classes and interfaces defined in
+System.Collections. It also defines multiple data structures to store and retrieve data such
+as List<T>, Queue<T>, Stack<T>, and Dictionary<TKey, TValue>.  
+
+List<T>                  List of type-safe objects that can dynamically grow & shrink
+Dictionary<Tkey,Tvalue>  Represents collection of type-safe keys and values Represents
+Queue<T>                 First In, First Out collection of type-safe objects Represents
+Stack<T>                 Last In, First Out collection of type-safe objects

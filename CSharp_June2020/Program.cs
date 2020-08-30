@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace CSharp
 {
@@ -8,6 +9,34 @@ namespace CSharp
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello World!!");
+        }
+    }
+
+    interface ITest
+    {
+        object thisIsprop { get; }
+        void method1();
+    }
+
+    class Test : ITest, IEnumerator
+    {
+        public object thisIsprop => throw new NotImplementedException();
+
+        public object Current => throw new NotImplementedException();
+
+        public void method1()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool MoveNext()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
         }
     }
 }

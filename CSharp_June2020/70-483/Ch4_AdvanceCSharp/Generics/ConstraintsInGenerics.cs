@@ -22,42 +22,42 @@ namespace Ch4_AdvanceCSharp
         {
             //1.
             //Here <T> type become int which is a value type
-            GenericClass2<int> genInt = new GenericClass2<int>();
+            GenericClass1<int> genInt = new GenericClass1<int>();
             int intData = genInt.GenericMethod(70);
             genInt.GenericProperty = 483;
             Console.WriteLine("{0} - {1}", intData, genInt.GenericProperty);
 
             //2.
             //Here <T> type become string. Which is a reference type
-            GenericClass3<string> genStr = new GenericClass3<string>();
+            GenericClass2<string> genStr = new GenericClass2<string>();
             string strData = genStr.GenericMethod("C#");
             genStr.GenericProperty = "Certification Exam: ";
             Console.WriteLine("{0} {1}", strData, genStr.GenericProperty);
 
             //3.
             //Here 'T' is Myclass. Which has public default constructor
-            GenericClass4<MyClass> genMC = new GenericClass4<MyClass>();
+            GenericClass3<MyClass> genMC = new GenericClass3<MyClass>();
 
             //4.
-            GenericClass5<Person1> genPer = new GenericClass5<Person1>();
+            GenericClass4<Person4> genPer = new GenericClass4<Person4>();
             //Student is also a Person. This is also valid.
-            GenericClass5<Student1> genStd = new GenericClass5<Student1>();
+            GenericClass4<Student4> genStd = new GenericClass4<Student4>();
 
             //5.
             //Here 'T' is IPerson
-            GenericClass6<IPerson> genIPer = new GenericClass6<IPerson>();
+            GenericClass5<IPerson> genIPer = new GenericClass5<IPerson>();
             //Here 'T' is Person which has implement 'IPerson'
-            GenericClass6<Person> genPer1 = new GenericClass6<Person>();
+            GenericClass5<Person5> genPer1 = new GenericClass5<Person5>();
             //Here 'T' is Student it inherit 'Person' which implement 'IPerson'.
-            GenericClass6<Student> genStd1 = new GenericClass6<Student>();
+            GenericClass5<Student5> genStd1 = new GenericClass5<Student5>();
 
             //6.
             //Here 'T' and 'U' types are same
-            GenericClass7<Person2, Person2> genPP =
-                new GenericClass7<Person2, Person2>();
+            GenericClass6<Person6, Person6> genPP =
+                new GenericClass6<Person6, Person6>();
             //Here 'T' inherit 'U' type
-            GenericClass7<Student2, Person2> genSP =
-                new GenericClass7<Student2, Person2>();
+            GenericClass6<Student6, Person6> genSP =
+                new GenericClass6<Student6, Person6>();
 
 
         }
@@ -65,7 +65,7 @@ namespace Ch4_AdvanceCSharp
 
 
     #region Constraint "where T : struct"
-    class GenericClass2<T> where T : struct
+    class GenericClass1<T> where T : struct
     {
         //Where T: struct says, 'T' can only be a value type.
         private T genericField;
@@ -79,7 +79,7 @@ namespace Ch4_AdvanceCSharp
     #endregion
 
     #region   Constraint "where T : class"
-    class GenericClass3<T> where T : class
+    class GenericClass2<T> where T : class
     {
         //type 'T' will be a reference type
         private T genericField;
@@ -101,20 +101,20 @@ namespace Ch4_AdvanceCSharp
         }
     }
 
-    class GenericClass4<T> where T : new()
+    class GenericClass3<T> where T : new()
     {
         //code
     }
     #endregion
 
     #region Constraint “where T: BaseClass”
-    class Person1
+    class Person4
     {
     }
-    class Student1 : Person1
+    class Student4 : Person4
     {
     }
-    class GenericClass5<T> where T : Person1
+    class GenericClass4<T> where T : Person4
     {
         //code
     }
@@ -125,7 +125,7 @@ namespace Ch4_AdvanceCSharp
     {
         void walking();
     }
-    class Person : IPerson
+    class Person5 : IPerson
     {
         //Implement Iperson
         public void walking()
@@ -133,11 +133,11 @@ namespace Ch4_AdvanceCSharp
             Console.WriteLine("wallking");
         }
     }
-    class Student : Person
+    class Student5 : Person5
     {
         //code
     }
-    class GenericClass6<T> where T : IPerson
+    class GenericClass5<T> where T : IPerson
     {
         //code
     }
@@ -145,15 +145,15 @@ namespace Ch4_AdvanceCSharp
     #endregion
 
     #region Constraint “where T: U”
-    class Person2
+    class Person6
     {
         //code
     }
-        class Student2 : Person2
+        class Student6 : Person6
         {
             //code
     }
-    class GenericClass7<T,U> where T : U
+    class GenericClass6<T,U> where T : U
     {
                 //code
     }
