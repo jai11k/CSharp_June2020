@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharp_June2020._BasicButCool.WhyDelegates</StartupObject>
+    <StartupObject>CSharp_June2020._BasicButCool.MulticastDelegate</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,5 +23,6 @@
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\jaankari\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\WorkingWithString\" />
     <Folder Include="_BasicButCool\Delegate\" />
+    <Folder Include="_BasicButCool\Delegate\jaankari\" />
   </ItemGroup>
 </Project>
