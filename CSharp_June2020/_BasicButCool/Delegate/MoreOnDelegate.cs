@@ -92,7 +92,7 @@ namespace CSharp_June2020._BasicButCool
             for(int i=0;i<10000;i++)
             {
                 //Does some thing long.
-                obj(i);
+                obj(i); //delegate invoked
             }
         }
     }
