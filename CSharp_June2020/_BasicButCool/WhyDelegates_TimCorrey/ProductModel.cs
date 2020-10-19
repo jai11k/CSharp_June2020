@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharp_June2020._BasicButCool.WhyDelegates_TimCorrey.WithDelegates
+namespace CSharp_June2020._BasicButCool.Delegates
 {
     public class ProductModel
     {

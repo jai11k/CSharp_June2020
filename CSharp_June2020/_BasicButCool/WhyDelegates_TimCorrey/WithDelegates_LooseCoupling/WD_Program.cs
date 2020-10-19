@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CSharp_June2020._BasicButCool.WhyDelegates_TimCorrey.WithDelegates
+namespace CSharp_June2020._BasicButCool.Delegates
 {
-    class Program
+    class WD_Program
     {
-        static ShoppingCartModel cart = new ShoppingCartModel();
+        static WD_ShoppingCartModel cart = new WD_ShoppingCartModel();
 
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace CSharp_June2020._BasicButCool.WhyDelegates_TimCorrey.WithDelegates
             Console.WriteLine($"The total for the cart is {cart.GenerateTotal(SubTotalAlert, CalculateLeveledDiscount, AlertUser):C2}");
             Console.WriteLine();
 
-            decimal total = cart.GenerateTotal((subTotal) => Console.WriteLine($"The subtotal for cart 2 is {subTotal:C2}"),
+            decimal totalForOtherCart = cart.GenerateTotal((subTotal) => Console.WriteLine($"The subtotal for cart 2 is {subTotal:C2}"),
                 (products, subTotal) => {
                     if (products.Count > 3)
                     {
@@ -27,7 +27,7 @@ namespace CSharp_June2020._BasicButCool.WhyDelegates_TimCorrey.WithDelegates
                 },
                 (message) => Console.WriteLine($"Cart 2 Alert: { message }"));
 
-            Console.WriteLine($"The total for cart 2 is {total:C2}");
+            Console.WriteLine($"The total for cart 2 is {totalForOtherCart:C2}");
             Console.WriteLine();
 
             Console.WriteLine();

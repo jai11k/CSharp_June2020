@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharp_June2020._BasicButCool.WhyDelegates_TimCorrey.WithDelegates
+namespace CSharp_June2020._BasicButCool.Delegates
 {
-    public class ShoppingCartModel
+    public class WD_ShoppingCartModel
     {
         public delegate void MentionDiscount(decimal subTotal);
 

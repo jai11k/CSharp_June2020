@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CSharp_June2020._BasicButCool.GenericDelegates
 {
@@ -18,8 +16,8 @@ namespace CSharp_June2020._BasicButCool.GenericDelegates
         static void Main(string[] args)
         {
             #region Func
-            Func<int, int, string> funcdemo1 = (x, y) => x + y + "";
-            Console.WriteLine("Func=>" + funcdemo1);
+            Func<int, int, string> funcdemo1 = (x, y) => x + y + "J";
+            Console.WriteLine("Func=>" + funcdemo1(1,2));
 
             //this only has return type
             Func<int> funcdemo2 = () => new Random().Next(1, 100);
