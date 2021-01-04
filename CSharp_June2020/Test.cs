@@ -37,21 +37,35 @@ namespace CSharp_June2020
             // }
             #endregion
 
-        
-            List<Employee> empList = new List<Employee>()
-            {
-                new Employee(){empID=1,empName="Jai",empSal=900M},
-                new Employee(){empID=2,empName="Simran",empSal=200M},
-                new Employee(){empID=3,empName="Abhi",empSal=500M},
-                new Employee(){empID=4,empName="Shubham",empSal=600M},
-                new Employee(){empID=5,empName="Karan",empSal=700M},
-            };
 
-       string s=     function1("--");
-        //TODO ... akal hai eh?
-            string s2 = function1(null);
-            empList.Sum(x => x.empSal);
+            //     List<Employee> empList = new List<Employee>()
+            //     {
+            //         new Employee(){empID=1,empName="Jai",empSal=900M},
+            //         new Employee(){empID=2,empName="Simran",empSal=200M},
+            //         new Employee(){empID=3,empName="Abhi",empSal=500M},
+            //         new Employee(){empID=4,empName="Shubham",empSal=600M},
+            //         new Employee(){empID=5,empName="Karan",empSal=700M},
+            //     };
+
+            //string s=     function1("--");
+            // //TODO ... akal hai eh?
+            //     string s2 = function1(null);
+            //     empList.Sum(x => x.empSal);
+
+            //int value = 0;
+            //bool test = Convert.ToBoolean(value);
+            //Console.WriteLine("Bool value =" + test);
+
+
+            List<string> lis = new List<string>();
+            lis.Add("jai simran singh");
+            lis.Add("jai pal singh");
+
+          var test=  lis.Where(x => x.Contains("simran"));
+
         }
+
+
         static string function1([NotNull] string args) => args + "@";
         
     }

@@ -23,5 +23,6 @@
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\jaankari\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\WorkingWithString\" />
     <Folder Include="_BasicButCool\Delegate\jaankari\" />
+    <Folder Include="70-483\Ch5_DelegatesAndEvents\" />
   </ItemGroup>
 </Project>
