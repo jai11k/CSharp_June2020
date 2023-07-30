@@ -9,7 +9,7 @@ namespace CSharp_June2020._BasicButCool
 
         #region jaankari
         /*
-         * Lambda expression,ACtion,Func,Predicate make your deligate code shorter sweeter and simpler.
+         * Lambda expression,Action,Func,Predicate make your deligate code shorter sweeter and simpler.
          * Lamda expression helps to build expression trees. -> LINQ,Business Languages
          * 
          */
