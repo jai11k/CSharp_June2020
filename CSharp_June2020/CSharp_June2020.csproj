@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <StartupObject>CSharp.Program</StartupObject>
+    <StartupObject>Interview.Programs.MergeOverLappingIntervals</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
