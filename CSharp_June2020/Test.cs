@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Collections;
 
 namespace CSharp_June2020
 {
@@ -76,5 +77,27 @@ namespace CSharp_June2020
         public string empName { get; set; }
 
         public decimal empSal { get; set; }
+    }
+}
+
+public class Person : IComparable
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public int CompareTo(object obj)
+    {
+        if (obj == null) return 1;
+
+        // new syntax seen, search and save it
+        if (obj is Person otherPerson)
+        {
+            // Compare based on age
+            return this.Age.CompareTo(otherPerson.Age);
+        }
+        else
+        {
+            throw new ArgumentException("Object is not a Person.");
+        }
     }
 }

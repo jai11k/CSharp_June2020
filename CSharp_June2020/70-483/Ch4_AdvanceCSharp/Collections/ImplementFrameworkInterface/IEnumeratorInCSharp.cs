@@ -14,11 +14,11 @@ namespace Ch4_AdvanceCSharp
     {
         static void Main(string[] args)
         {
-            People people = new People(3);
-            people.Add(new Person2 { Name = "Ali", Age = 22 });
-            people.Add(new Person2 { Name = "Sundus", Age = 21 });
-            people.Add(new Person2 { Name = "Hogi", Age = 12 });
-            foreach (var item in people)
+            People obj = new People(3);
+            obj.Add(new Person2 { Name = "Ali", Age = 22 });
+            obj.Add(new Person2 { Name = "Sundus", Age = 21 });
+            obj.Add(new Person2 { Name = "Hogi", Age = 12 });
+            foreach (var item in obj)
             {
                 //Cast from object to Person...kyuki interface di implemenatation ch object type hai
                 Person2 person = (Person2)item;
