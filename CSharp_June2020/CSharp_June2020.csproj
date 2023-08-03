@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="70-483\Ch3_OOP\" />
-    <Folder Include="70-483\Ch3_OOP\DataProtection\" />
     <Folder Include="70-483\Ch3_OOP\Inheritance\" />
     <Folder Include="70-483\Ch3_OOP\Polymorphism\" />
     <Folder Include="70-483\Ch3_OOP\Polymorphism\StaticPolymorphisimAlso_EarlyBinding\" />
