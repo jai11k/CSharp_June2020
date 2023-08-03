@@ -13,27 +13,32 @@ namespace Ch1_FundamentalsOfCSharp
         #endregion
         static void outMethod(out int i)
         {
-            i = 1;
+            i = 1; //assignment at first line is important in out keyword
         }
+        static void MyMaths(int num1, int num2,
+          out int add,
+          out int sub)
+        {
+            add = num1 + num2; //assignment at first line is important in out keyword
+            sub = num1 - num2;
+        }
+
+        
         static void Main(string[] args)
         {
             int j; //j=0 default value
             outMethod(out j);
 
             int add = 0;
-            int mul = 1;
+            int sub = 0;
 
-            MyMaths(1, 2, out add, out mul);
+            MyMaths(1, 2, out add, out sub);
 
             Console.WriteLine(j); // j = 1
         }
 
-        static void MyMaths(int num1, int num2,
-            out int add,
-            out int mult)
-        {
-            add=num1+ num2;
-            mult=num1* num2;
-        }
+
+
+      
     }
 }
