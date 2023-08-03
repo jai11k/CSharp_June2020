@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace Ch1_FundamentalsOfCSharp
@@ -18,7 +19,21 @@ namespace Ch1_FundamentalsOfCSharp
         {
             int j; //j=0 default value
             outMethod(out j);
+
+            int add = 0;
+            int mul = 1;
+
+            MyMaths(1, 2, out add, out mul);
+
             Console.WriteLine(j); // j = 1
+        }
+
+        static void MyMaths(int num1, int num2,
+            out int add,
+            out int mult)
+        {
+            add=num1+ num2;
+            mult=num1* num2;
         }
     }
 }

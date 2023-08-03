@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="70-483\Ch5_DelegatesAndEvents\**" />
+    <EmbeddedResource Remove="70-483\Ch5_DelegatesAndEvents\**" />
+    <None Remove="70-483\Ch5_DelegatesAndEvents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="70-483\Ch3_OOP\" />
     <Folder Include="70-483\Ch3_OOP\DataProtection\" />
     <Folder Include="70-483\Ch3_OOP\Inheritance\" />
@@ -23,6 +29,5 @@
     <Folder Include="70-483\Ch4_AdvanceCSharp\Collections\ImplementFrameworkInterface\jaankari\" />
     <Folder Include="70-483\Ch4_AdvanceCSharp\WorkingWithString\" />
     <Folder Include="_BasicButCool\Delegate\jaankari\" />
-    <Folder Include="70-483\Ch5_DelegatesAndEvents\" />
   </ItemGroup>
 </Project>
