@@ -23,7 +23,7 @@ namespace Ch4_AdvanceCSharp.jaankari
         {
 
             List<int> numbers = new List<int>();
-            numbers = new List<int>();
+            //numbers = new List<int>();
             numbers.Add(1);
             numbers.Add(2);
             numbers.Add(3);
@@ -40,7 +40,8 @@ namespace Ch4_AdvanceCSharp.jaankari
 
             //TODO  this concept was done in  MANZOOR tutorial
             //TODO  foreach loop di debuging .. oh v samjni ae...
-            //TODO  fucntion call hunda .. yield ik single value wapis le k calling function ko aanda fr calling function ohnu jini itreate ho gi hundi loop ose position te bejhda
+            //TODO  fucntion call hunda .. yield ik single value wapis le k calling function ko aanda fr calling function
+            //ohnu jini itreate ho gi hundi loop ose position te bejhda
 
             var listofnumbers = getListOfNumbersGreaterThanFive(numbers);
 

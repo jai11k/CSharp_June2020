@@ -35,6 +35,10 @@ namespace Interview.Programs
             if (intervals == null || intervals.Count <= 1)
                 return intervals;
 
+            int ans=5.CompareTo(1); //1
+            int ans1=5.CompareTo(5); //0
+            int ans2 =5.CompareTo(10); //-1
+
             // Sort intervals based on their start times
             intervals.Sort((a, b) => a.Start.CompareTo(b.Start));
 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <StartupObject>SOLID._3.LSP.Ex4.WithoutLSP.Program</StartupObject>
+    <StartupObject>Interview.Programs.Word_Ladder.WordLadder</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

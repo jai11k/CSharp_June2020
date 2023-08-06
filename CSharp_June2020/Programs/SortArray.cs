@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interview.Programs
+namespace Interview.Programs.Sort_Array
 {
     public class SortArray
     {
